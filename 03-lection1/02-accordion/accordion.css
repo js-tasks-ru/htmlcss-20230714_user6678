@@ -1,1 +1,64 @@
 /* Стилизация аккордеона */
+.accordion {
+  margin: 0 auto;
+  max-width: 730px; 
+}
+
+.accordion__item {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  padding: 24px 536px 24px 32px;
+  height: 72px;
+  width: 730px;
+  border: 1px solid var(--gray-3, #ACB5BD);
+  border-radius: 8px;
+}
+
+.accordion__item:last-child {
+  margin-bottom: 0;
+}  
+
+.accordion__summary {
+  position: relative;
+  display: inline-block;
+  padding-right: 500px;
+  width: 159px;
+  color: #000;
+  list-style: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.accordion__summary::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 16px;
+  height: 8px;
+  background-image: url("../../assets/images/open-marker.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.accordion__content {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  color: var(--gray-4);
+}
+
+.accordion__item[open] {
+  padding: 24px 49px 32px 32px;  
+  min-height: 144px;
+}
+
+.accordion__item[open] .accordion__summary::before {
+  background-image: url("../../assets/images/close-marker.svg");
+}
+
+.accordion__item[open] .accordion__summary {
+  color: var(--black, #212429);
+}
