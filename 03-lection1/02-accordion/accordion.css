@@ -60,5 +60,5 @@
 }
 
 .accordion__item[open] .accordion__summary {
-  color: var(--black, #212429);
+  color: var(--black);
 }
