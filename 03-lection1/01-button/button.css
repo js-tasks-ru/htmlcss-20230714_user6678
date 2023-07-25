@@ -1,19 +1,15 @@
 /* Стилизация кнопки */
 .button {
-  width: 189px;
   height: 48px;
   border: none;
   border-radius: 8px;
   transition: opacity 200ms ease-in-out, background-color 200ms ease-in-out;
   color: #fff;
   font-family: "Roboto";
-  font-size: 16px;
+  font-size: 19px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-}
-
-.button:hover {
   cursor: pointer;
 }
 
