@@ -1,15 +1,9 @@
 /* Стилизация аккордеона */
-.accordion {
-  margin: 0 auto;
-  max-width: 730px; 
-}
-
 .accordion__item {
   display: block;
   box-sizing: border-box;
   margin-bottom: 8px;
   padding: 24px 536px 24px 32px;
-  height: 72px;
   width: 730px;
   border: 1px solid var(--gray-3, #ACB5BD);
   border-radius: 8px;
@@ -21,9 +15,7 @@
 
 .accordion__summary {
   position: relative;
-  display: inline-block;
-  padding-right: 500px;
-  width: 159px;
+  display: block;
   color: #000;
   list-style: none;
   font-size: 16px;
@@ -51,7 +43,7 @@
 }
 
 .accordion__item[open] {
-  padding: 24px 49px 32px 32px;  
+  padding-bottom: 32px; 
   min-height: 144px;
 }
 
