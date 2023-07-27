@@ -3,8 +3,7 @@
   display: block;
   box-sizing: border-box;
   margin-bottom: 8px;
-  padding: 24px 536px 24px 32px;
-  width: 730px;
+  padding: 24px 32px;
   border: 1px solid var(--gray-3, #ACB5BD);
   border-radius: 8px;
 }
@@ -44,7 +43,6 @@
 
 .accordion__item[open] {
   padding-bottom: 32px; 
-  min-height: 144px;
 }
 
 .accordion__item[open] .accordion__summary::before {
