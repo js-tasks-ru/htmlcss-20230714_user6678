@@ -1,7 +1,7 @@
 .histogram {
-    width: 354px;
-    height: 185px;
-    border: 2px solid var(--gray-3, #ACB5BD);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--gray-3, #ACB5BD);
     border-radius: 8px;
     padding: 24px;
     font-family: "Inter";
@@ -10,18 +10,21 @@
     font-weight: 400;
 }
 
+.histogram__head {
+    display: flex;
+    justify-content: space-between;
+}
+
 .histogram__title {
     color: var(--black, #212429);
     line-height: 24px; /* 150% */
     opacity: 0.800000011920929;
     display: inline-block;
-    margin-right: 200px;
-    padding-bottom: 6px;
+    margin-bottom: 6px;
 }
 
 .histogram__link {
     color: #4263EB;
-    text-align: right;
     line-height: 24px; /* 150% */
     display: inline-block;
 }
@@ -39,6 +42,7 @@
     display: flex;
     column-gap: 1px;
     align-items: flex-end;
+    height: 50px;
 }
 
 .histogram__columns-item {
@@ -47,13 +51,13 @@
 }
 
 .histogram__columns-item_high {
-    height: 50px;
+    height: 100%;
 }
 
 .histogram__columns-item_middle {
-    height: 22px;
+    height: 44%;
 }
 
 .histogram__columns-item_short {
-    height: 11px;
+    height: 22%;
 }
