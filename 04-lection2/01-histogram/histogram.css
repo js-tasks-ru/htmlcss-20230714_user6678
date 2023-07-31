@@ -3,7 +3,7 @@
     flex-direction: column;
     border: 1px solid var(--gray-3, #ACB5BD);
     border-radius: 8px;
-    padding: 24px;
+    padding: 16px 24px 24px;
     font-family: "Inter";
     font-size: 16px;
     font-style: normal;
@@ -18,7 +18,6 @@
 .histogram__title {
     color: var(--black, #212429);
     line-height: 24px; /* 150% */
-    opacity: 0.800000011920929;
     display: inline-block;
     margin-bottom: 6px;
 }
@@ -47,7 +46,7 @@
 
 .histogram__columns-item {
     background-color: #4263EB;
-    flex-basis: 100%;
+    flex-basis: 9px;
 }
 
 .histogram__columns-item_high {
