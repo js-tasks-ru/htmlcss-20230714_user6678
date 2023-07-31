@@ -25,21 +25,19 @@
 
 .skeleton__rect {
   background: linear-gradient(163deg, #DDE2E5 0%, #E2E6E8 33.33%, #F3F5F5 52.08%, #E3E7EA 73.96%, #DDE2E5 100%);
+  height: 20px;
 }
 
 .skeleton__rect_short {
   width: 172px;
-  height: 20px;
 }
 
 .skeleton__rect_middle {
   width: 257px;
-  height: 20px;
 }
 
 .skeleton__rect_long {
   width: 515px;
-  height: 20px;
 }
 
 .skeleton__group-rect {
