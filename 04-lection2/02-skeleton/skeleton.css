@@ -29,19 +29,20 @@
 }
 
 .skeleton__rect_short {
-  width: 172px;
+  width: 33%;
 }
 
 .skeleton__rect_middle {
-  width: 257px;
+  width: 50%;
 }
 
 .skeleton__rect_long {
-  width: 515px;
+  width: 100%;
 }
 
 .skeleton__group-rect {
   display: flex;
   flex-direction: column;
   row-gap: 8px;
+  width: 515px;
 }
