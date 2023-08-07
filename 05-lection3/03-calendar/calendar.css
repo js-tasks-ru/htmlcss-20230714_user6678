@@ -1,6 +1,7 @@
 .calendar {
   border: 1px solid var(--gray-3, #ACB5BD);
-  padding: 28px 30px 40px;
+  padding: 28px 26px 32px;
+  border-radius: 8px;
 }
 
 .calendar__title {
@@ -14,7 +15,7 @@
 
 .calendar__content {
   display: grid;
-  grid-template-rows: repeat(7, 36px);
+  grid-template-rows: repeat(7, 1fr);
   grid-template-columns: repeat(7, 36px); 
   row-gap: 8px;
 }
@@ -33,7 +34,6 @@
 }
 
 .calendar__content-item_active {
-  padding: 8px 9px 8px 11px;
   color: #FFF;
   line-height: 20px; /* 125% */
   background: #4263EB;
@@ -43,6 +43,6 @@
   background: #A0B1F5;
 }
 
-#first {
+.calendar__content-item_order_first {
   grid-column-start: 5;
 }
