@@ -11,6 +11,10 @@ body {
   display: none;
 }
 
+.tooltip__trigger {
+  cursor: pointer;
+}
+
 .tooltip__trigger:hover ~ .tooltip__bubble { 
   display: block;
   position: absolute;
