@@ -1,16 +1,14 @@
 .components-preview__inner {
-  display: grid;
-  grid-template-columns: 229px 56px 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "menu . content";
-}
-
-.components-preview__menu {
-  grid-area: menu;
+  display: flex;
+  column-gap: 56px; 
 }
 
 .components-preview__content {
-  grid-area: content;
+  background-color: #fff;
+  width: 825px;
+  height: 746px;
+  flex-shrink: 0;
+  border-radius: 8px;
 }
 
 .components-preview__menu-title {
@@ -25,6 +23,7 @@
 
 .components-preview__menu-list {
   list-style: none;
+  padding-left: 0;
 }
 
 .components-preview__menu-item {
