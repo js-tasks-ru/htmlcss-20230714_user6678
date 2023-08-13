@@ -1,3 +1,18 @@
+.header__flex-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    padding-top: 24px;
+    padding-bottom: 38px;
+}
+
+.header a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .header__title {
     font-family: "Inter";
     font-size: 50px;
@@ -6,6 +21,29 @@
     color: var(--black, #212429);
 }
 
-.header {
-    padding: 96px 0 145px;
+.header ul {
+    list-style: none;
+    padding: 0;
+}
+
+.header__menu-list {
+    display: flex;
+    column-gap: 40px;
+}
+
+.header__menu-list-item {
+    color: var(--gray-3, #ACB5BD);
+}
+
+.header__menu-list-item_active {
+    color: var(--black, #212429);
+    padding-bottom: 8px;
+}
+
+.header__menu-list-item_active::after {
+    content: "";
+    display: block;
+    background: #212429;
+    height: 5px;
+    width: 100%;
 }
