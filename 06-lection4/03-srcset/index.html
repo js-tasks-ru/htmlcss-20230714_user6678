@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./srcset.css">
-    </head>
-    <body>
-
-    </body>
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./srcset.css" />
+  </head>
+  <body>
+    <img
+      src="./public/forest_400.jpg"
+      srcset="
+        forest_400.jpg 1x
+        forest_768.jpg 2x
+    "
+      sizes="(max-width: 1440px) 300px, 400px"
+      alt="forest"
+      class="image"
+    />
+  </body>
 </html>
