@@ -4,6 +4,15 @@
 
 .checkbox__state {
   cursor: pointer;
+  display: flex;
+  column-gap: 12px;
+  align-items: center;
+}
+
+.checkbox__title {
+  color: var(--gray-4, #495057);
+  font-family: "Inter";
+  line-height: 24px; /* 150% */
 }
 
 .checkbox__input {
@@ -36,6 +45,14 @@
   background: var(--gray-2, #DDE2E5);
 }
 
+.checkbox_disabled .checkbox__title {
+  color: var(--gray-2, #DDE2E5);
+}
+
 .checkbox_disabled .checkbox__icon {
   display: none;
+}
+
+.checkbox__input:focus ~ .checkbox__state .checkbox__title {
+  text-decoration: underline;
 }
