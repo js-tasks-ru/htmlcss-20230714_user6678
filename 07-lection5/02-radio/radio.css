@@ -44,15 +44,15 @@
   background: var(--blue, #4263EB);
 }
 
-.radio_disable {
+.radio__input:disabled {
   pointer-events: none;
 }
 
-.radio_disable .radio__title {
+.radio__input:disabled .radio__title {
   color: var(--gray-2, #DDE2E5);
 }
 
-.radio_disable .radio__control {
+.radio__input:disabled .radio__control {
  background: #DDE2E5;
 }
 
