@@ -1,0 +1,40 @@
+.component-lib a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.component-lib__title {
+    font-family: "Inter";
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 64px; /* 128% */
+    color: var(--black, #212429);
+}
+
+.component-lib ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.component-lib__menu-list {
+    display: flex;
+    column-gap: 40px;
+}
+
+.component-lib__menu-list-item {
+    color: var(--gray-3, #ACB5BD);
+}
+
+.component-lib__menu-list-item_active {
+    color: var(--black, #212429);
+}
+
+.component-lib__menu-list-item_active::after {
+    content: "";
+    display: block;
+    background: #212429;
+    height: 5px;
+    width: 100%;
+    margin-top: 8px;
+}

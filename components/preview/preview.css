@@ -1,4 +1,12 @@
 .preview {
     flex: 1 1 auto;
     background: #F9FAFC;
+    padding-top: 68px;
+    padding-bottom: 92px;
+}
+
+.preview__button {
+    padding: 0 40px;
+    display: block;
+    margin: 64px auto 0;
 }

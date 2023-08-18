@@ -25,59 +25,76 @@
                 </li>
               </ul>
             </nav>
-          </div>
-          <h1 class="header__title">Reusable component library</h1>
-          <div class="header__menu">
-            <ul class="header__menu-list">
-              <li class="header__menu-list-item header__menu-list-item_active"><a href="">All components</a></li>
-              <li class="header__menu-list-item"><a href="">Elements</a></li>
-              <li class="header__menu-list-item"><a href="">Containers</a></li> 
-              <li class="header__menu-list-item"><a href="">Templates</a></li> 
-            </ul>
+            <div class="theme-changer" id="theme-changer">
+              <div class="theme-changer__icon"></div>
+              
+            </div>
           </div>
         </div>
       </header>
-      <main class="preview">
-        <div class="container">
-          <div class="cards">
-            <div class="cards__item">
-              <div class="cards__item-img">
-                <img src="" alt="" />
-              </div>
-              <div class="cards__item-title">Tooltip</div>
-            </div>
-            <div class="cards__item">
-              <div class="cards__item-img">
-                <img src="" alt="" />
-              </div>
-              <div class="cards__item-title">Custom form elements</div>
-            </div>
-            <div class="cards__item">
-              <div class="cards__item-img">
-                <img src="" alt="" />
-              </div>
-              <div class="cards__item-title">Calendar</div>
-            </div>
-            <div class="cards__item">
-              <div class="cards__item-img">
-                <img src="" alt="" />
-              </div>
-              <div class="cards__item-title">Modal dialog</div>
-            </div>
-            <div class="cards__item">
-              <div class="cards__item-img">
-                <img src="" alt="" />
-              </div>
-              <div class="cards__item-title">Histogram</div>
-            </div>
-            <div class="cards__item">
-              <div class="cards__item-img">
-                <img src="" alt="" />
-              </div>
-              <div class="cards__item-title">Avatar</div>
+      <main class="main">
+        <section class="component-lib">
+          <div class="container">            
+            <h1 class="component-lib__title">Reusable component library</h1>
+            <div class="component-lib__menu">
+              <ul class="component-lib__menu-list">
+                <li class="component-lib__menu-list-item component-lib__menu-list-item_active"><a href="">All components</a></li>
+                <li class="component-lib__menu-list-item"><a href="">Elements</a></li>
+                <li class="component-lib__menu-list-item"><a href="">Containers</a></li> 
+                <li class="component-lib__menu-list-item"><a href="">Templates</a></li> 
+              </ul>
             </div>
           </div>
-        </div>
+        </section>
+        <section class="preview">
+          <div class="container">
+            <div class="cards">
+              <div class="cards__item">
+                <div class="cards__item-img">
+                  <img src="./assets/images/tooltip.svg" alt="tooltip" />
+                </div>
+                <div class="cards__item-title">Tooltip</div>
+                <div class="cards__item-description">Container</div>
+              </div>
+              <div class="cards__item">
+                <div class="cards__item-img">
+                  <img src="./assets/images/" alt="inputs" />
+                </div>
+                <div class="cards__item-title">Custom form elements</div>
+                <div class="cards__item-description">Element</div>
+              </div>
+              <div class="cards__item">
+                <div class="cards__item-img">
+                  <img src="./assets/images/calendar.svg" alt="calendar" />
+                </div>
+                <div class="cards__item-title">Calendar</div>
+                <div class="cards__item-description">Container</div>
+              </div>
+              <div class="cards__item">
+                <div class="cards__item-img">
+                  <img src="./assets/images/modal.svg" alt="modal" />
+                </div>
+                <div class="cards__item-title">Modal dialog</div>
+                <div class="cards__item-description">Container</div>
+              </div>
+              <div class="cards__item">
+                <div class="cards__item-img">
+                  <img src="./assets/images/histogram.svg" alt="histogram" />
+                </div>
+                <div class="cards__item-title">Histogram</div>
+                <div class="cards__item-description">Element</div>
+              </div>
+              <div class="cards__item">
+                <div class="cards__item-img">
+                  <img src="./assets/images/avatar.svg" alt="avatar" />
+                </div>
+                <div class="cards__item-title">Avatar</div>
+                <div class="cards__item-description">Element</div>
+              </div>
+            </div>
+            <button class="preview__button button button_alternate">Load more</button>
+          </div>
+        </section>
       </main>
       <footer class="footer">
         <div class="container">
