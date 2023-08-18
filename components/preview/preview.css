@@ -1,6 +1,6 @@
 .preview {
     flex: 1 1 auto;
-    background: #F9FAFC;
+    background: var(--preview-bg);
     padding-top: 68px;
     padding-bottom: 92px;
 }

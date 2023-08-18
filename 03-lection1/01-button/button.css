@@ -27,8 +27,8 @@
 }
 
 .button_alternate {
-  border: 1px solid var(--gray-3, #ACB5BD);
-  color: var(--gray-4);
+  border: 1px solid var(--grey-3, #ACB5BD);
+  color: var(--grey-4);
 }
 
 .button_primary:hover {

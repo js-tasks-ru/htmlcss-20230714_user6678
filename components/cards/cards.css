@@ -7,7 +7,7 @@
 .cards__item {
     padding: 32px 25px 38px;
     border-radius: 12px;
-    background: #FFF;
+    background: var(--card-bg);
 }
 
 .cards__item-img {
@@ -21,7 +21,7 @@
 
 .cards__item-title {
     margin-bottom: 6px;
-    color: var(--black, #212429);
+    color: var(--font-color);
     text-align: center;
     font-family: "Roboto";
     font-size: 21px;
@@ -29,7 +29,7 @@
 }
 
 .cards__item-description {
-    color: var(--black, #212429);
+    color: var(--font-color);
     text-align: center;
     font-family: "Roboto";
 }

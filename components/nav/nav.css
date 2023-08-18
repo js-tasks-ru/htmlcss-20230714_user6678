@@ -10,5 +10,5 @@
 }
 
 .nav__menu-item_active {
-  color: var(--black, #212429);
+  color: var(--active-text-color);
 }

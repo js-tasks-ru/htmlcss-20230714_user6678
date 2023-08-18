@@ -1,7 +1,7 @@
 .footer {
     font-family: "Inter", sans-serif;
     text-align: center;
-    color: var(--black, #212429);
+    color: var(--font-color);
 }
 
 .footer__title {

@@ -25,6 +25,7 @@
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
+    --grey-5: #F9FAFC;
 
     --error: var(--red);
     --success: var(--blue);
@@ -32,16 +33,18 @@
     --primary: var(--blue);
     --secondary: var(--purple);
     
-    --main-bg: var(--black);
-    --font-color: #ffffff75;
-    --dark-bg: var(--grey-1);
+    --main-bg: var(--white);
+    --font-color: var(--black);
+    --dark-bg: var(--black);
     --white-bg: var(--black);
     --light-bg: var(--grey-4);
-    --grey-bg: var(--grey-4);
-    --card-bg: var(--black);
+    --preview-bg: var(--grey-5);
+    --grey-bg: var(--grey-3);
+    --card-bg: var(--white);
     --text-primary: var(--white);
-    --active-text-color: var(--grey-2);
+    --active-text-color: var(--black);
     --input-text-color: var(--font-color);
+    --logo-bg: var(--black); 
 }
 
 * {
