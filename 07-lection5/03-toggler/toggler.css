@@ -1,4 +1,5 @@
 .toggler {
+  display: inline-block;
   position: relative;
 }
 
@@ -58,20 +59,20 @@
   text-decoration: underline;
 }
 
-.toggler_disable {
+.toggler__input:disabled {
   pointer-events: none;
 }
 
-.toggler_disable .toggler__state .toggler__control {
+.toggler__input:disabled .toggler__state .toggler__control {
   background: #DDE2E5;
 }
 
-.toggler_disable .toggler__state .toggler__circle_off {
+.toggler__input:disabled .toggler__state .toggler__circle_off {
   opacity: 0.25;
   background: var(--gray-3, #ACB5BD);
 }
 
-.toggler_disable .toggler__state .toggler__circle_on {
+.toggler__input:disabled .toggler__state .toggler__circle_on {
   opacity: 0.25;
   background: inherit;
 }
