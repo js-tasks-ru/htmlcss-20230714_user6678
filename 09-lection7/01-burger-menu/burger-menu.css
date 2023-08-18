@@ -28,14 +28,6 @@
   column-gap: 208px;
 }
 
-.burger-menu__content-dark-mode {
-  display: inline-block;
-  border-top: 1px var(--gray-2, #DDE2E5) solid;
-  border-bottom: 1px var(--gray-2, #DDE2E5) solid;
-  padding: 24px 0;
-  margin-bottom: 24px;
-}
-
 .burger-menu-button {
   width: 32px;
   height: 32px;
