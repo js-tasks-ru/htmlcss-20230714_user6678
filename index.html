@@ -10,7 +10,7 @@
         <div class="container">
           <div class="header__flex-inner">
             <div class="logo">
-              <img src="./assets/images/logo.svg" alt="logo">
+              <img src="./assets/images/logo.svg" alt="logo" />
             </div>
             <nav class="nav">
               <ul class="nav__menu">
@@ -25,23 +25,44 @@
                 </li>
               </ul>
             </nav>
-            <div class="theme-changer" id="theme-changer">
-              <div class="theme-changer__icon"></div>
-              
-            </div>
+            <label class="toggler theme-changer__toggler" id="theme-changer">
+              <input type="checkbox" class="toggler__input" />
+              <div class="toggler__state">
+                <div class="toggler__title theme-changer__icon">
+                  <img src="./assets/images/sun-icon.svg" alt="sun">
+                </div>
+                <div class="toggler__control">
+                  <div class="toggler__circle toggler__circle_off"></div>
+                  <div class="toggler__circle toggler__circle_on"></div>
+                </div>
+                <div class="toggler__title theme-changer__icon">
+                  <img src="./assets/images/moon-icon.svg" alt="moon">
+                </div>
+              </div>
+            </label>
           </div>
         </div>
       </header>
       <main class="main">
         <section class="component-lib">
-          <div class="container">            
+          <div class="container">
             <h1 class="component-lib__title">Reusable component library</h1>
             <div class="component-lib__menu">
               <ul class="component-lib__menu-list">
-                <li class="component-lib__menu-list-item component-lib__menu-list-item_active"><a href="">All components</a></li>
-                <li class="component-lib__menu-list-item"><a href="">Elements</a></li>
-                <li class="component-lib__menu-list-item"><a href="">Containers</a></li> 
-                <li class="component-lib__menu-list-item"><a href="">Templates</a></li> 
+                <li
+                  class="component-lib__menu-list-item component-lib__menu-list-item_active"
+                >
+                  <a href="">All components</a>
+                </li>
+                <li class="component-lib__menu-list-item">
+                  <a href="">Elements</a>
+                </li>
+                <li class="component-lib__menu-list-item">
+                  <a href="">Containers</a>
+                </li>
+                <li class="component-lib__menu-list-item">
+                  <a href="">Templates</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -92,7 +113,9 @@
                 <div class="cards__item-description">Element</div>
               </div>
             </div>
-            <button class="preview__button button button_alternate">Load more</button>
+            <button class="preview__button button button_alternate">
+              Load more
+            </button>
           </div>
         </section>
       </main>
