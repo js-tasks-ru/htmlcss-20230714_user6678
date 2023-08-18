@@ -10,3 +10,11 @@
 .burger-menu[data-open] {
   transform: translateX(0);
 }
+
+.burger-menu__content-components-list-item {
+  font-size: 16px;
+}
+
+.burger-menu__content-components-title {
+  color: var(--gray-3, #ACB5BD);
+}

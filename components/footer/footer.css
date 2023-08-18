@@ -1,19 +1,11 @@
-.footer {
-    font-family: "Inter", sans-serif;
+.footer__text {
     text-align: center;
-    color: var(--black, #212429);
-}
-
-.footer__title {
+    color: var(--gray-3, #ACB5BD);
     font-family: "Inter";
-    font-size: 38px;
-    font-style: normal;
+    font-size: 12px;
     font-weight: 500;
-    line-height: 48px; /* 126.316% */
-}
-
-.footer__description {
-    line-height: 24px; /* 150% */
-    display: inline-block;
-    width: 640px;
+    line-height: 18px; /* 150% */
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+    padding-bottom: 56px;
 }

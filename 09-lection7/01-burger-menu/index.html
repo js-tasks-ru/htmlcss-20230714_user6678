@@ -6,13 +6,55 @@
     <link rel="stylesheet" href="./burger-menu.css" />
     <script defer src="./burger-menu.js"></script>
   </head>
-  <body style="padding: 0; margin: 0;">
+  <body style="padding: 0; margin: 0">
     <button class="burger-menu-open" id="burger-menu-open">Open</button>
     <div class="burger-menu" id="burger-menu">
       <button class="burger-menu__close" id="burger-menu-close">Close</button>
       <div class="burger-menu__content">
-        <div class="burger-menu__content-dark-mode"></div>
-        <div class="burger-menu__content-components components__menu"></div>
+        <div class="burger-menu__content-dark-mode">
+          <div class="burger-menu__content-dark-mode-title"></div>
+
+        </div>
+        <div class="burger-menu__content-components components-preview__menu">
+          <h2 class="components-preview__menu-title burger-menu__content-components-title">Components</h2>
+          <ul class="components-preview__menu-list">
+            <li
+              class="components-preview__menu-item burger-menu__content-components-list-item"
+            >
+              Modal
+            </li>
+            <li
+              class="components-preview__menu-item burger-menu__content-components-list-item"
+            >
+              Tooltip
+            </li>
+            <li
+              class="components-preview__menu-item burger-menu__content-components-list-item"
+            >
+              Avatar
+            </li>
+            <li
+              class="components-preview__menu-item burger-menu__content-components-list-item"
+            >
+              Calendar
+            </li>
+            <li
+              class="components-preview__menu-item components-preview__menu-item_current burger-menu__content-components-list-item"
+            >
+              Histogram
+            </li>
+            <li
+              class="components-preview__menu-item burger-menu__content-components-list-item"
+            >
+              Custom form elements
+            </li>
+            <li
+              class="components-preview__menu-item components-preview__menu-item_order_last burger-menu__content-components-list-item"
+            >
+              Main page
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </body>
