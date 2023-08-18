@@ -10,7 +10,19 @@
         <div class="container">
           <div class="header__flex-inner">
             <div class="logo">
-              <img src="./assets/images/logo.svg" alt="logo" />
+              <svg
+                fill="#000"
+                height="32"
+                viewBox="0 0 110 32"
+                width="110"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g>
+                  <path d="m0 1h30v30h-30z"></path>
+                  <rect height="32" rx="16" width="32" x="38"></rect>
+                  <path d="m78 0 32 32h-32z"></path>
+                </g>
+              </svg>
             </div>
             <nav class="nav">
               <ul class="nav__menu">
@@ -29,14 +41,14 @@
               <input type="checkbox" class="toggler__input" />
               <div class="toggler__state">
                 <div class="toggler__title theme-changer__icon">
-                  <img src="./assets/images/sun-icon.svg" alt="sun">
+                  <img src="./assets/images/sun-icon.svg" alt="sun" />
                 </div>
                 <div class="toggler__control">
                   <div class="toggler__circle toggler__circle_off"></div>
                   <div class="toggler__circle toggler__circle_on"></div>
                 </div>
                 <div class="toggler__title theme-changer__icon">
-                  <img src="./assets/images/moon-icon.svg" alt="moon">
+                  <img src="./assets/images/moon-icon.svg" alt="moon" />
                 </div>
               </div>
             </label>
@@ -47,7 +59,7 @@
         <section class="component-lib">
           <div class="container">
             <h1 class="component-lib__title">Reusable component library</h1>
-            <div class="component-lib__menu">
+            <nav class="component-lib__menu">
               <ul class="component-lib__menu-list">
                 <li
                   class="component-lib__menu-list-item component-lib__menu-list-item_active"
@@ -64,7 +76,7 @@
                   <a href="">Templates</a>
                 </li>
               </ul>
-            </div>
+            </nav>
           </div>
         </section>
         <section class="preview">
@@ -131,5 +143,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="./10-lection8/01-theme-changer/theme-changer.js"></script>
   </body>
 </html>
