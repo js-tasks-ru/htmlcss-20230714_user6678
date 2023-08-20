@@ -49,7 +49,7 @@
   pointer-events: none;
 }
 
-.radio__input:disabled .radio__title {
+.radio__input:disabled ~.radio__state .radio__title {
   color: var(--gray-2, #DDE2E5);
 }
 
