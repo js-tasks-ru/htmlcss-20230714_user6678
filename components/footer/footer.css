@@ -2,6 +2,7 @@
     font-family: "Inter", sans-serif;
     text-align: center;
     color: var(--font-color);
+    padding: 71px 0 136px;
 }
 
 .footer__title {
