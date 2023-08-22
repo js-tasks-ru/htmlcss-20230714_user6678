@@ -5,6 +5,18 @@
     <link rel="stylesheet" href="../../assets/css/main.css" />
     <link rel="stylesheet" href="./burger-menu.css" />
     <script defer src="./burger-menu.js"></script>
+    <style>
+      .burger-menu-button {
+        width: 32px;
+        height: 32px;
+        background-color: var(--gray-2, #dde2e5);
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
   </head>
   <body style="padding: 0; margin: 0">
     <button class="burger-menu-open burger-menu-button" id="burger-menu-open">
@@ -25,32 +37,22 @@
           alt="close-icon"
         />
       </button>
-      <div class="burger-menu__content"> 
+      <div class="burger-menu__content">
         <div class="burger-menu__content-components components-preview__menu">
-          <h2
-            class="components-preview__menu-title burger-menu__content-components-title"
-          >
+          <h2 class="components-preview__menu-title burger-menu__title">
             Components
           </h2>
           <ul class="components-preview__menu-list">
-            <li
-              class="components-preview__menu-item burger-menu__list-item"
-            >
+            <li class="components-preview__menu-item burger-menu__list-item">
               Modal
             </li>
-            <li
-              class="components-preview__menu-item burger-menu__list-item"
-            >
+            <li class="components-preview__menu-item burger-menu__list-item">
               Tooltip
             </li>
-            <li
-              class="components-preview__menu-item burger-menu__list-item"
-            >
+            <li class="components-preview__menu-item burger-menu__list-item">
               Avatar
             </li>
-            <li
-              class="components-preview__menu-item burger-menu__list-item"
-            >
+            <li class="components-preview__menu-item burger-menu__list-item">
               Calendar
             </li>
             <li
@@ -58,9 +60,7 @@
             >
               Histogram
             </li>
-            <li
-              class="components-preview__menu-item burger-menu__list-item"
-            >
+            <li class="components-preview__menu-item burger-menu__list-item">
               Custom form elements
             </li>
             <li
