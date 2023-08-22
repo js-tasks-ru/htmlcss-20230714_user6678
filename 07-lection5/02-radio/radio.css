@@ -53,7 +53,7 @@
   color: var(--gray-2, #DDE2E5);
 }
 
-.radio__input:disabled .radio__control {
+.radio__input:disabled ~ .radio__state .radio__control {
  background: #DDE2E5;
 }
 
