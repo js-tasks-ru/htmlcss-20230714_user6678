@@ -38,19 +38,20 @@
   border-color: #4263EB;
 }
 
-.checkbox_disabled {
+
+.checkbox__input:disabled {
   pointer-events: none;
 }
 
-.checkbox_disabled .checkbox__control {
+.checkbox__input:disabled ~ .checkbox__state .checkbox__control {
   background: var(--gray-2, #DDE2E5);
 }
 
-.checkbox_disabled .checkbox__title {
+.checkbox__input:disabled ~ .checkbox__state .checkbox__title {
   color: var(--gray-2, #DDE2E5);
 }
 
-.checkbox_disabled .checkbox__icon {
+.checkbox__input:disabled ~ .checkbox__state .checkbox__icon {
   display: none;
 }
 
