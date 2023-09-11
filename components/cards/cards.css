@@ -5,23 +5,32 @@
 }
 
 .cards__item {
-    padding: 80px 24px 30px 26px;
+    padding: 32px 25px 38px;
     border-radius: 12px;
-    background: #FFF;
+    background: var(--card-bg);
 }
 
 .cards__item-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 300px;
-    height: 157px;
+    height: 222px;
+    margin-bottom: 25px;
 }
 
 .cards__item-title {
-    margin-bottom: 75px;
-    color: var(--black, #212429);
+    margin-bottom: 6px;
+    color: var(--font-color);
     text-align: center;
     font-family: "Roboto";
     font-size: 21px;
     font-weight: 500;
 }
 
+.cards__item-description {
+    color: var(--font-color);
+    text-align: center;
+    font-family: "Roboto";
+}
 

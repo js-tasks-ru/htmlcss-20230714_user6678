@@ -1,0 +1,48 @@
+.component-lib a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.component-lib__title {
+    font-family: "Inter";
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 64px; /* 128% */
+    color: var(--font-color);
+}
+
+.component-lib ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.component-lib__menu-list {
+    display: flex;
+    column-gap: 40px;
+}
+
+.component-lib__menu-list-item {
+    color: var(--grey-3);
+}
+
+.component-lib__menu-list-item::after {
+    content: "";
+    display: block;
+    background: var(--dark-bg);
+    height: 5px;
+    width: 100%;
+    margin-top: 8px;
+    transform: scaleX(0);
+    transition: transform 250ms linear;
+}
+
+.component-lib__menu-list-item_active,
+.component-lib__menu-list-item:hover {
+    color: var(--active-text-color);
+}
+
+.component-lib__menu-list-item_active::after,
+.component-lib__menu-list-item:hover::after {
+    transform: scaleX(1);
+}

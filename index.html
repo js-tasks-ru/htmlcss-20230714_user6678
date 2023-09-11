@@ -1,57 +1,150 @@
 <!DOCTYPE html>
 <!-- Главная страница -->
-<html lang="ru">
+<html lang="ru" style="background: var(--main-bg)">
   <head>
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <style>
+      html[data-theme-dark] {
+        --main-bg: var(--black);
+        --font-color: #ffffff75;
+        --dark-bg: var(--grey-1);
+        --white-bg: var(--black);
+        --light-bg: var(--grey-4);
+        --grey-bg: var(--grey-4);
+        --card-bg: var(--black);
+        --text-primary: var(--white);
+        --active-text-color: var(--grey-2);
+        --input-text-color: var(--font-color);
+        --preview-bg: var(--grey-bg);
+        --logo-bg: var(--white);
+      }
+    </style>
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
         <div class="container">
-          <h1 class="header__title">Reusable component library</h1>
-        </div>
-      </header>
-      <main class="preview">
-        <div class="container">
-          <div class="cards">
-            <div class="cards__item">
-              <div class="cards__item-img">
-                <img src="" alt="" />
-              </div>
-              <div class="cards__item-title">Tooltip</div>
+          <div class="header__flex-inner">
+            <div class="logo">
+              <svg
+                fill="var(--logo-bg)"
+                height="32"
+                viewBox="0 0 110 32"
+                width="110"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g>
+                  <path d="m0 1h30v30h-30z"></path>
+                  <rect height="32" rx="16" width="32" x="38"></rect>
+                  <path d="m78 0 32 32h-32z"></path>
+                </g>
+              </svg>
             </div>
-            <div class="cards__item">
-              <div class="cards__item-img">
-                <img src="" alt="" />
+            <nav class="nav">
+              <ul class="nav__menu">
+                <li class="nav__menu-item nav__menu-item_active">
+                  <a href="">Components</a>
+                </li>
+                <li class="nav__menu-item">
+                  <a href="">About</a>
+                </li>
+                <li class="nav__menu-item">
+                  <a href="">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <label class="toggler theme-changer__toggler" id="theme-changer">
+              <input type="checkbox" class="toggler__input" />
+              <div class="toggler__state">
+                <div class="toggler__title theme-changer__icon">
+                  <img src="./assets/images/sun-icon.svg" alt="sun" />
+                </div>
+                <div class="toggler__control">
+                  <div class="toggler__circle toggler__circle"></div>
+                </div>
+                <div class="toggler__title theme-changer__icon">
+                  <img src="./assets/images/moon-icon.svg" alt="moon" />
+                </div>
               </div>
-              <div class="cards__item-title">Custom form elements</div>
-            </div>
-            <div class="cards__item">
-              <div class="cards__item-img">
-                <img src="" alt="" />
-              </div>
-              <div class="cards__item-title">Calendar</div>
-            </div>
-            <div class="cards__item">
-              <div class="cards__item-img">
-                <img src="" alt="" />
-              </div>
-              <div class="cards__item-title">Modal dialog</div>
-            </div>
-            <div class="cards__item">
-              <div class="cards__item-img">
-                <img src="" alt="" />
-              </div>
-              <div class="cards__item-title">Histogram</div>
-            </div>
-            <div class="cards__item">
-              <div class="cards__item-img">
-                <img src="" alt="" />
-              </div>
-              <div class="cards__item-title">Avatar</div>
-            </div>
+            </label>
           </div>
         </div>
+      </header>
+      <main class="main">
+        <section class="component-lib">
+          <div class="container">
+            <h1 class="component-lib__title">Reusable component library</h1>
+            <nav class="component-lib__menu">
+              <ul class="component-lib__menu-list">
+                <li
+                  class="component-lib__menu-list-item component-lib__menu-list-item_active"
+                >
+                  <a href="">All components</a>
+                </li>
+                <li class="component-lib__menu-list-item">
+                  <a href="">Elements</a>
+                </li>
+                <li class="component-lib__menu-list-item">
+                  <a href="">Containers</a>
+                </li>
+                <li class="component-lib__menu-list-item">
+                  <a href="">Templates</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+        <section class="preview">
+          <div class="container">
+            <div class="cards">
+              <div class="cards__item">
+                <div class="cards__item-img">
+                  <img src="./assets/images/tooltip.svg" alt="tooltip" />
+                </div>
+                <div class="cards__item-title">Tooltip</div>
+                <div class="cards__item-description">Container</div>
+              </div>
+              <div class="cards__item">
+                <div class="cards__item-img">
+                  <img src="./assets/images/" alt="inputs" />
+                </div>
+                <div class="cards__item-title">Custom form elements</div>
+                <div class="cards__item-description">Element</div>
+              </div>
+              <div class="cards__item">
+                <div class="cards__item-img">
+                  <img src="./assets/images/calendar.svg" alt="calendar" />
+                </div>
+                <div class="cards__item-title">Calendar</div>
+                <div class="cards__item-description">Container</div>
+              </div>
+              <div class="cards__item">
+                <div class="cards__item-img">
+                  <img src="./assets/images/modal.svg" alt="modal" />
+                </div>
+                <div class="cards__item-title">Modal dialog</div>
+                <div class="cards__item-description">Container</div>
+              </div>
+              <div class="cards__item">
+                <div class="cards__item-img">
+                  <img src="./assets/images/histogram.svg" alt="histogram" />
+                </div>
+                <div class="cards__item-title">Histogram</div>
+                <div class="cards__item-description">Element</div>
+              </div>
+              <div class="cards__item">
+                <div class="cards__item-img">
+                  <img src="./assets/images/avatar.svg" alt="avatar" />
+                </div>
+                <div class="cards__item-title">Avatar</div>
+                <div class="cards__item-description">Element</div>
+              </div>
+            </div>
+            <button class="preview__button button button_alternate">
+              Load more
+            </button>
+          </div>
+        </section>
       </main>
       <footer class="footer">
         <div class="container">
@@ -65,5 +158,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="./10-lection8/01-theme-changer/theme-changer.js"></script>
   </body>
 </html>

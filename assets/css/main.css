@@ -1,11 +1,18 @@
 @import '../fonts/fonts.css';
 
+@import '../../03-lection1/01-button/button.css';
+@import '../../components/wrapper/wrapper.css';
 @import '../../components/container/container.css';
 @import '../../components/header/header.css';
+@import '../../components/component-lib/component-lib.css';
 @import '../../components/preview/preview.css';
 @import '../../components/cards/cards.css';
 @import '../../components/footer/footer.css';
+@import '../../components/nav/nav.css';
 @import '../../03-lection1/01-button/button.css';
+@import '../../07-lection5/03-toggler/toggler.css';
+@import '../../components/theme-changer/theme-changer.css';
+@import '../../components/html/html.css';
 @import '../../components/header/header.css';
 @import '../../components/main/main.css';
 @import '../../components/footer/footer.css';
@@ -26,12 +33,26 @@
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
+    --grey-5: #F9FAFC;
 
     --error: var(--red);
     --success: var(--blue);
 
     --primary: var(--blue);
     --secondary: var(--purple);
+    
+    --main-bg: var(--white);
+    --font-color: var(--black);
+    --dark-bg: var(--black);
+    --white-bg: var(--black);
+    --light-bg: var(--grey-4);
+    --preview-bg: var(--grey-5);
+    --grey-bg: var(--grey-3);
+    --card-bg: var(--white);
+    --text-primary: var(--white);
+    --active-text-color: var(--black);
+    --input-text-color: var(--font-color);
+    --logo-bg: var(--black); 
 }
 
 * {
