@@ -1,0 +1,25 @@
+.burger-menu {
+  width: 100vw;
+  height: 100vh;
+  transform: translateX(-100%);
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: transform 300ms linear;
+}
+
+.burger-menu[data-open] {
+  transform: translateX(0);
+}
+
+.burger-menu__content {
+  margin-top: 16px;
+}
+
+.burger-menu__list-item {
+  font-size: 16px;
+}
+
+.burger-menu__title {
+  color: var(--gray-3, #ACB5BD);
+}

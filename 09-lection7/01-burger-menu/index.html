@@ -1,12 +1,76 @@
 <!DOCTYPE html>
 <!-- Страница бургер-меню -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./burger-menu.css">
-        <script defer src="./burger-menu.js"></script>
-    </head>
-    <body>
-
-    </body>
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./burger-menu.css" />
+    <script defer src="./burger-menu.js"></script>
+    <style>
+      .burger-menu-button {
+        width: 32px;
+        height: 32px;
+        background-color: var(--gray-2, #dde2e5);
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body style="padding: 0; margin: 0">
+    <button class="burger-menu-open burger-menu-button" id="burger-menu-open">
+      <img
+        class="burger-menu-button__icon"
+        src="../../assets/images/burger-menu-open-icon.svg"
+        alt="open-icon"
+      />
+    </button>
+    <div class="burger-menu" id="burger-menu">
+      <button
+        class="burger-menu__close burger-menu-button"
+        id="burger-menu-close"
+      >
+        <img
+          class="burger-menu-button__icon"
+          src="../../assets/images/burger-menu-close-icon.svg"
+          alt="close-icon"
+        />
+      </button>
+      <div class="burger-menu__content">
+        <div class="burger-menu__content-components components-preview__menu">
+          <h2 class="components-preview__menu-title burger-menu__title">
+            Components
+          </h2>
+          <ul class="components-preview__menu-list">
+            <li class="components-preview__menu-item burger-menu__list-item">
+              Modal
+            </li>
+            <li class="components-preview__menu-item burger-menu__list-item">
+              Tooltip
+            </li>
+            <li class="components-preview__menu-item burger-menu__list-item">
+              Avatar
+            </li>
+            <li class="components-preview__menu-item burger-menu__list-item">
+              Calendar
+            </li>
+            <li
+              class="components-preview__menu-item components-preview__menu-item_current burger-menu__list-item"
+            >
+              Histogram
+            </li>
+            <li class="components-preview__menu-item burger-menu__list-item">
+              Custom form elements
+            </li>
+            <li
+              class="components-preview__menu-item components-preview__menu-item_order_last burger-menu__list-item"
+            >
+              Main page
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

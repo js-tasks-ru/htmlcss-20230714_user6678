@@ -1,7 +1,20 @@
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    line-height: 24px;
-    font-family: "Inter";
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 82px 1fr 130px;
+  row-gap: 36px;
+  background: #F9FAFC;
+}
+
+.wrapper__header {
+  grid-area: header;
+}
+
+.wrapper__main {
+  grid-area: main;
+}
+
+.wrapper__footer {
+  grid-area: footer;
 }
